@@ -25,7 +25,7 @@ Maven 3.x.x
 
 Program
 ------
-The characteristics of Akka allow me to solve the difficult concurrency and scalability challenges.
+The characteristics of Akka allowed me to solve the difficult concurrency and scalability challenges.
 Program adhere to strong isolation principles.
 Spring helped to reduce classes dependencies.
 
@@ -73,7 +73,7 @@ Start the server
 ./startUp.sh
 
 Stop Server
-Please just use CTRL + C - Shutdown hook already added to program to shut gracefully
+Please just use CTRL + C - Shutdown hooks already added to program to shut gracefully
 
 Run the client
 --------------
