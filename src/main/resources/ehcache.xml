@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+         monitoring="autodetect" dynamicConfig="true">
+    <diskStore path="java.io.tmpdir"/>
+
+    <cache name="AGENT_BASED_MODEL"
+           maxEntriesLocalHeap="1000000"
+           eternal="false"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="86400"
+           transactionalMode="off">
+    </cache>
+</ehcache>

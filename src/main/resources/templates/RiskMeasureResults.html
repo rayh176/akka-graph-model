@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Level Up Lunch - RiskMeasure Listing</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <h2>RiskMeasure Listing</h2>
+
+        <table class="data-instrument-js table table-striped" >
+            <tr>
+                <th>policyId</th>
+                <th>brandFactor</th>
+                <th>breed</th>
+                <th>finalResults</th>
+                <th>riskResultsPerYear</th>
+            </tr>
+        </table>
+
+        <button id="fetchRiskMeasures" class="btn btn-default" type="submit">Button</button>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script type="text/javascript">
+
+                $("#fetchRiskMeasures").bind("click", function() {
+
+                    $.get("http://localhost:3000/risk-measures", function(data) {
+
+                        $.each(data, function(i, resultCollector) {
+
+                            $(".data-instrument-js").append(
+                                "<tr><td>" + resultCollector.policyId + "</td>" +
+                                "<td>" + resultCollector.brandFactor + "</td>" +
+                                "<td>" + resultCollector.riskResultsPerYear + "</td>"+
+                                "<td>" + resultCollector.finalResults + "</td>"+
+                                "<td>" + resultCollector.breed + "</td>"+
+                                "</tr>");
+                                private final double policyId;
+    private final double brandFactor;
+    private volatile Map<Integer, Double> riskResultsPerYear;
+    private double finalResults;
+    private final String breed;
+                        });
+
+                    });
+                });
+            </script>
+        <script>
+            $(document).ready(function(){
+                $("p").click(function(){
+                    $(this).hide();
+                });
+            });
+        </script>
+        <p>If you click on me, I will disappear.</p>
+    </body>
+</html>
