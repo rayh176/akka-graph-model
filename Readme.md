@@ -69,7 +69,8 @@ mvn clean install
 
 Start the server
 ----------------
-[please have Java on PATH] - run the below
+[please have Java on PATH]
+- navigate to /bin dir and run the below
 ./startUp.sh
 
 Stop Server
