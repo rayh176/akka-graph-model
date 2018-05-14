@@ -1,5 +1,5 @@
 Overview
-The project cover a REST API service, that provides a risk simulation API endpoint that receives band value,
+The project cover a REST API service, that provides a risk simulation API endpoint that receives brand value,
 and calls an internal API service to perform statistical analysis of that data and return the results.
 1- Complex event processing used with AKKA -
 2- Results are stored in the cache
